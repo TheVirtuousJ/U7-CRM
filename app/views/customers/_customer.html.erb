@@ -1,5 +1,7 @@
-<h1><%= @customer.name %></h1>
-<%= image_tag(@customer.image_text, alt: @customer.name %>
-<strong>Phone: </strong> <%= @customer.phone_number %>
-<strong>Email: </strong> <%= mail_to(@customer.email) %>
-<strong>Notes: </strong> <%= customer.notes %>
+<div class="customer" id="<%= customer.full_name %>">
+  <h1><%= customer.full_name %></h1>
+  <%= image_tag(customer.image_text, alt: customer.full_name) %>
+  <p><strong>Phone: </strong> <%= customer.phone_number %></p>
+  <p><strong>Email: </strong> <%= mail_to(customer.email) %></p>
+  <p><strong>Notes: </strong> <%= customer.notes %></p>
+</div>
